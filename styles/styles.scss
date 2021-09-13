@@ -19,6 +19,11 @@ $info:#FFFFFF;
     padding:0px;
     margin:0px;
 }
+html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
 body{
     background-color: $mainBackground;
     background-image: url('../assets/soonPageBG.png');
@@ -196,7 +201,7 @@ background-size: 360px;
     justify-content: space-evenly;
     align-items:center;
     width:100%;
-    height:20%;
+    height:16%;
     padding:10px;
     button{
         width:260px;
@@ -256,7 +261,7 @@ h1{
 }
 .timer{
     width:100%;
-    height:60%;
+    height:50%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -299,7 +304,7 @@ h1{
 }
 .lower{
     width:100%;
-    height:35%;
+    height:45%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -501,7 +506,7 @@ h1{
 }
 @media screen and (max-width:440px){
     .leftSection{
-        height:83.6%;
+        height:80.6%;
         width:98%;
     }
     .rightSection{
@@ -516,13 +521,25 @@ h1{
         font-size:1.2rem;
     }
     .timerDiv div span{
-        font-size:1.6rem;
+        font-size:1.8rem;
     }
     .upper h1{
         font-size:1.8rem;
     }
     .menuHeader{
         width:100%;
+    }
+    .button1{
+        background-size: 45px;
+    }
+    .button2{
+        background-size: 49px;
+    }
+    .button3{
+        background-size: 49px;
+    }
+    .timerDiv{
+        font-size:.72rem;
     }
 }
 @media screen and (max-width:360px){
@@ -536,25 +553,26 @@ h1{
         font-size:1.2rem;
     }
     .timerDiv div span{
-        font-size:1.4rem;
+        font-size:1.6rem;
     }
     .upper h1{
         font-size:1.8rem;
     }
     .timerDiv{
-        font-size:.75rem;
+        font-size:.7rem;
     }
     .button1{
-        background-size: 50px;
+        background-size: 42px;
     }
     .button2{
-        background-size: 54px;
+        background-size: 46px;
     }
     .button3{
-        background-size: 54px;
+        background-size: 46px;
     }
-    .socialMedia a button{
+    .socialMedia{
         transform: scale(.8);
+        column-gap: 20px;
     }
     .menuHeader{
         flex-direction: column;
@@ -585,7 +603,7 @@ h1{
         font-size:1.1rem;
     }
     .timerDiv div span{
-        font-size:1.3rem;
+        font-size:1.4rem;
     }
     .upper h1{
         font-size:1.6rem;
@@ -594,15 +612,11 @@ h1{
         width:100%;
     }
     .timerDiv{
-        font-size:.7rem;
+        font-size:.68rem;
     }
     .bubble.b1{right:55%;top:10px;}
-    .socialMedia a button{
-        transform: scale(.74);
-    }
 }
 @media screen and (max-width:290px){
-    .bubble.b1{right:60%;top:50px;}
     .services{
         width:85px;
         height:105px;
