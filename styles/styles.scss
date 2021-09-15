@@ -22,7 +22,7 @@ $info:#FFFFFF;
 html {
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
+    -webkit-touch-callout: none
 }
 body{
     background-color: $mainBackground;
@@ -78,7 +78,7 @@ section{
     border-right-color: rgba(255, 255, 255, 0.08);
     border-bottom-color: rgba(255, 255, 255, 0.001);
     align-self: flex-start;
-    margin-top:3.45px;
+    margin-top:.6vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,41 +223,6 @@ h1{
     width:250px;
     height:60px;
     font-weight: 700;
-    margin: 1rem 0 1rem 2rem;
-}
-  
-@keyframes typing {
-    0.0000%, 97.3488% { content: ""; }
-    1.1395%, 96.2093% { content: "ب"; }
-    2.2791%, 95.0698% { content: "به"; }
-    3.4186%, 93.9302% { content: "به "; }
-    4.5581%, 92.7907% { content: "به ز"; }
-    5.6977%, 91.6512% { content: "به زو"; }
-    6.8372%, 90.5116% { content: "به زود"; }
-    7.9767%, 89.3721% { content: "به زود"; }
-    9.1163%, 88.2326% { content: "به زودی"; }
-    10.2558%, 87.0930% { content: "به زودی "; }
-    11.3558%, 86.0030% { content: "به زودی !"; }
-}
-  
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
-  
-.typewriter {
-    --caret: currentcolor;
-}
-  
-.typewriter::before {
-    content: "";
-    animation: typing 12s infinite;
-}
-  
-.typewriter::after {
-    content: "";
-    border-right: 2px solid var(--caret);
-    animation: blink 0.7s linear infinite;
 }
 .timer{
     width:100%;

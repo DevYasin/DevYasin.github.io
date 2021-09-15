@@ -1,4 +1,4 @@
-var timeStart = new Date("Dec 26, 2021 00:00:00").getTime()
+var timeStart = new Date("Nov 20, 2021 00:00:00").getTime()
 
    // Run myfunc every second
 var myfunc = setInterval(() => {
